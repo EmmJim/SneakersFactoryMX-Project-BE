@@ -1,0 +1,19 @@
+{
+  "name": "backend-shopping-store",
+  "version": "1.0.0",
+  "description": "Backend with NodeJs, Express and MongoDB for a Shopping store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "author": "EmmJim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
