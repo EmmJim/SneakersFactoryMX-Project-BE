@@ -3,6 +3,13 @@ const bcryptjs = require('bcryptjs');
 //Models
 const User = require('../models/user');
 
+const getProfile = async(req, res) => {
+    const {user} = req;
+
+    console.log(user)
+
+    res.json({user});
+}
 
 const getUser = async(req, res) => {
     const {id} = req.params;
@@ -84,6 +91,7 @@ const updateUser = async(req, res) => {
 }
 
 module.exports = {
+    getProfile,
     getUser,
     createUser,
     updateUser
